@@ -34,7 +34,7 @@ public class ParallelTest {
 		driver.get("https://www.google.com");
 	}
 
-	@Test(enabled=true)
+	@Test
 	public void testCase(){
 		System.out.println("Screen title is "+ driver.getTitle());
 	}
