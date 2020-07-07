@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+//parallel test project
+
 public class ParallelTest {
 	
 	public static WebDriver driver;
