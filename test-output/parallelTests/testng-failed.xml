@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [parallelTests]" parallel="tests">
+  <parameter name="brow" value="firefox"/>
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="brow" value="chrome"/>
+    <classes>
+      <class name="com.parallel.practice.ParallelTest">
+        <methods>
+          <include name="testCase"/>
+          <include name="setUpMethod"/>
+          <include name="tearDown"/>
+          <include name="setUpMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.parallel.practice.ParallelTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FFTest(failed)" parallel="tests">
+    <parameter name="brow" value="firefox"/>
+    <classes>
+      <class name="com.parallel.practice.ParallelTest">
+        <methods>
+          <include name="testCase"/>
+          <include name="setUpMethod"/>
+          <include name="tearDown"/>
+          <include name="setUpMethod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.parallel.practice.ParallelTest -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
+</suite> <!-- Failed suite [parallelTests] -->
