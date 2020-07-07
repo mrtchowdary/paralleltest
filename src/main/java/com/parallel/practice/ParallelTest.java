@@ -31,10 +31,10 @@ public class ParallelTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		driver.manage().deleteAllCookies();
-		driver.get("https://www.seleniumeasy.com/test/");
+		driver.get("https://www.google.com");
 	}
 
-	@Test
+	@Test(enabled=true)
 	public void testCase(){
 		System.out.println("Screen title is "+ driver.getTitle());
 	}
